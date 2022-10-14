@@ -6,7 +6,7 @@
 </script>
 
 {#each tabs as tab}
-{#if tab.popout == TabLocation.Default}
+{#if tab.location == TabLocation.Default}
 <Tab type={tab.type}/>
 {/if}
 {/each}

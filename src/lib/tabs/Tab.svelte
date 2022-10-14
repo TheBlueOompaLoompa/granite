@@ -1,8 +1,8 @@
 <script lang='ts'>
-  import type { TabLocation } from '../types.js';
+  import type { TabType } from '../types.js';
   import Editor from './types/Editor.svelte';
 
-  export let type: TabLocation;
+  export let type: TabType;
 </script>
 
 {#if type == 'editor'}
