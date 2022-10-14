@@ -5,7 +5,7 @@
 
   import Tabs from './lib/tabs/Tabs.svelte';
 
-  let vaultHandle: FilesystemHandle;
+  let vaultHandle: FileSystemHandle;
 
   vaultStore.subscribe(v => vaultHandle = v);
 
@@ -18,7 +18,7 @@
 
 <main>
 {#if vaultHandle}
-<Tabs/>
+<Tabs {tabs}/>
 {:else}
 <button on:click={openVault}>Open Vault</button>
 {/if}

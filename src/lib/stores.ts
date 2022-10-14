@@ -1,3 +1,4 @@
 import { writable } from 'svelte/store';
 
-export const vaultStore = writable();
+let h: FileSystemHandle;
+export const vaultStore = writable(h);
