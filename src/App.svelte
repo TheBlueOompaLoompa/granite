@@ -3,6 +3,7 @@
   import { vaultStore } from './lib/stores.js';
   import { getVaultAccess } from './lib/filesystem.js';
 
+  import Popout from './lib/Popout.svelte';
   import Tabs from './lib/tabs/Tabs.svelte';
 
   let vaultHandle: FileSystemHandle;
@@ -18,6 +19,7 @@
 
 <main>
 {#if vaultHandle}
+<Popout/>
 <Tabs {tabs}/>
 {:else}
 <button on:click={openVault}>Open Vault</button>
