@@ -1,9 +1,9 @@
-<script lang='ts'>
+<script lang="ts">
   import { TabType } from '../types.js';
   import Browser from './types/Browser.svelte';
   import Editor from './types/Editor.svelte';
 
-  export let type: TabType;
+  export let type;
 </script>
 
 {#if type == TabType.Browser}

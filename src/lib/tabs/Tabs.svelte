@@ -2,7 +2,7 @@
   import { ITab, TabLocation } from '../types.js';
   import Tab from './Tab.svelte';
 
-  export let tabs: ITab[];
+  export let tabs: ITab[] = [];
 </script>
 
 {#each tabs as tab}

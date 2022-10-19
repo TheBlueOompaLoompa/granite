@@ -1,9 +1,7 @@
 <script>
-    import { FileEarmark } from 'svelte-bootstrap-icons';
 </script>
 
 <bar>
-    <FileEarmark/>
 </bar>
 
 <style>

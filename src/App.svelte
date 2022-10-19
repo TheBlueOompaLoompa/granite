@@ -14,7 +14,7 @@
     vaultStore.set(await getVaultAccess());
   }
 
-  let tabs: ITab[];
+  let tabs: ITab[] = [];
 </script>
 
 <main>
