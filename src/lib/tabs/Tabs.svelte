@@ -1,8 +1,8 @@
 <script lang='ts'>
-  import { ITab, TabLocation } from '../types.js';
+  import { TabLocation } from '../types.js';
   import Tab from './Tab.svelte';
 
-  export let tabs: ITab[] = [];
+  export let tabs = [];
 </script>
 
 {#each tabs as tab}
